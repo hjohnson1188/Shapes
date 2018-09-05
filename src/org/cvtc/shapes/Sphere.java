@@ -37,7 +37,7 @@ public class Sphere extends Shape {
 	@Override
 	public float volume() {
 		//calculate the volume of the sphere
-		return (float) ((4/3) * Math.PI * (Math.pow(radius, 3)));
+		return (float) ((4.0f/3.0f) * Math.PI * (Math.pow(radius, 3)));
 	}
 	@Override
 	public void render() {
