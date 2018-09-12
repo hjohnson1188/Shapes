@@ -27,7 +27,7 @@ public class Cylinder extends Shape {
 	 * 
 	 * @param set the radius
 	 */
-	public void setRadius(float radius) {
+	private void setRadius(float radius) {
 		this.radius = radius;
 		
 	}
@@ -46,7 +46,7 @@ public class Cylinder extends Shape {
 	 * 
 	 * @param set the height
 	 */
-	public void setHeight(float height) {
+	private void setHeight(float height) {
 		this.height = height;
 	}
 	

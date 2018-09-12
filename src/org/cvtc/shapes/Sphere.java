@@ -26,7 +26,7 @@ public class Sphere extends Shape {
 	 * 
 	 * @param set the radius
 	 */
-	public void setRadius(float radius) {
+	private void setRadius(float radius) {
 		this.radius = radius;
 	}
 	@Override

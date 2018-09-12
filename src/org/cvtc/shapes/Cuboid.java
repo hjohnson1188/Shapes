@@ -28,7 +28,7 @@ public class Cuboid extends Shape {
 	 * 
 	 * @param set the width
 	 */
-	public void setWidth(float width) {
+	private void setWidth(float width) {
 		this.width = width;
 	}
 	/**
@@ -36,7 +36,7 @@ public class Cuboid extends Shape {
 	 * @return the height
 	 */
 	public float getHeight() {
-		//make sure height is nto negative
+		//make sure height is not negative
 		if (height < 0) {
 			height = 0.0f;
 		}
@@ -46,7 +46,7 @@ public class Cuboid extends Shape {
 	 * 
 	 * @param set the height
 	 */
-	public void setHeight(float height) {
+	private void setHeight(float height) {
 		this.height = height;
 	}
 	/**
@@ -64,7 +64,7 @@ public class Cuboid extends Shape {
 	 * 
 	 * @param  set the depth
 	 */
-	public void setDepth(float depth) {
+	private void setDepth(float depth) {
 		this.depth = depth;
 	}
 	@Override
