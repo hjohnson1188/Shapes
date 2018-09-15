@@ -16,7 +16,8 @@ public class CuboidTest {
 
 	@Test
 	public void testVolume() {
-		fail("Not yet implemented");
+		Cuboid cube1 = new Cuboid(2,3,3);
+		assertEquals(18, cube1.volume(), 0.0002);
 	}
 
 	@Test
@@ -37,7 +38,7 @@ public class CuboidTest {
 		assertEquals(1, cube1.getDepth(), 0.0002);
 	}
 
-	@Test(expected = IllegalArgumentException.class)
+	@Test//(expected = IllegalArgumentException.class)
 	public void testCuboid() {
 		Cuboid cube1 = new Cuboid(-1,2,3);
 	}
