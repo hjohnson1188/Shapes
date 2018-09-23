@@ -7,6 +7,8 @@ package org.cvtc.shapes;
 
 public class Shape {
 	
+	private MessageBox Dialog;
+	
 
 	public float surfaceArea() {
 		// TODO Auto-generated method stub
@@ -20,6 +22,18 @@ public class Shape {
 
 	public void render() {
 		// TODO Auto-generated method stub
+		
+	}
+
+	protected MessageBox getDialog() {
+		return Dialog;
+	}
+
+	private void setDialog(MessageBox dialog) {
+		Dialog = dialog;
+	}
+	
+	public Shape(MessageBox Dialog) {
 		
 	}
 
