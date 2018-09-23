@@ -66,7 +66,7 @@ public class Cylinder extends Shape {
 		JOptionPane.showMessageDialog(null, "Cylinder \n Volume = " + volume() + "\n" + "Surface Area = " + surfaceArea() + "\n" + "Dimensions: \n Radius: " + getRadius() + "\n Height: " + getHeight());
 	}
 	
-	public Cylinder(float radius, float height) {
+	public Cylinder(Dialog MessageBox, float radius, float height) {
 		setRadius(radius);
 		setHeight(height);
 	}

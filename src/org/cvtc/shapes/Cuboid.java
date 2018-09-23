@@ -84,7 +84,7 @@ public class Cuboid extends Shape {
 	}
 	
 	
-	public Cuboid(float width, float height, float depth) {
+	public Cuboid(Dialog MessageBox, float width, float height, float depth) {
 		setWidth(width);
 		setHeight(height);
 		setDepth(depth);

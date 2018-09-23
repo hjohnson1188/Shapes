@@ -45,7 +45,7 @@ public class Sphere extends Shape {
 		JOptionPane.showMessageDialog(null, "Sphere \n Volume = " + volume() + "\n" + "Surface Area = " + surfaceArea() + "\n" + "Dimensions: \n Radius: " + getRadius());
 	}
 	
-	public Sphere(float radius) {
+	public Sphere(Dialog MessageBox, float radius) {
 		setRadius(radius);
 	}
 	
