@@ -1,7 +1,5 @@
 package org.cvtc.shapes;
 
-import javax.swing.JOptionPane;
-
 /**
  * @author Heather
  *
@@ -80,11 +78,14 @@ public class Cuboid extends Shape {
 	@Override
 	public void render() {
 		//Display a dialog box with Cuboid
-		JOptionPane.showMessageDialog(null, "Cuboid \n Volume = " + volume() + "\n" + "Surface Area = " + surfaceArea() + "\n" + "Dimensions: \n Depth: " + getDepth() + "\n Height: " + getHeight() + "\n Width: "+ getWidth());
+		//JOptionPane.showMessageDialog(null, "Cuboid \n Volume = " + volume() + "\n" + "Surface Area = " + surfaceArea() + "\n" + "Dimensions: \n Depth: " + getDepth() + "\n Height: " + getHeight() + "\n Width: "+ getWidth());
+		String message = "Cuboid \n Volume = " + volume() + "\n" + "Surface Area = " + surfaceArea() + "\n" + "Dimensions: \n Depth: " + getDepth() + "\n Height: " + getHeight() + "\n Width: "+ getWidth();
+		this.dialog.Show(message, "Cuboid");
 	}
 	
 	
-	public Cuboid(Dialog MessageBox, float width, float height, float depth) {
+	public Cuboid(Dialog dialog, float width, float height, float depth) {
+		super(dialog);
 		setWidth(width);
 		setHeight(height);
 		setDepth(depth);

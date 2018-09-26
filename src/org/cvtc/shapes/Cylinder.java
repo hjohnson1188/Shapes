@@ -63,10 +63,13 @@ public class Cylinder extends Shape {
 	@Override
 	public void render() {
 		//Display a dialog box with cylinder
-		JOptionPane.showMessageDialog(null, "Cylinder \n Volume = " + volume() + "\n" + "Surface Area = " + surfaceArea() + "\n" + "Dimensions: \n Radius: " + getRadius() + "\n Height: " + getHeight());
+		//JOptionPane.showMessageDialog(null, "Cylinder \n Volume = " + volume() + "\n" + "Surface Area = " + surfaceArea() + "\n" + "Dimensions: \n Radius: " + getRadius() + "\n Height: " + getHeight());
+		String message = "Cylinder \n Volume = " + volume() + "\n" + "Surface Area = " + surfaceArea() + "\n" + "Dimensions: \n Radius: " + getRadius() + "\n Height: " + getHeight();
+		this.dialog.Show(message, "Cylinder");
 	}
 	
-	public Cylinder(Dialog MessageBox, float radius, float height) {
+	public Cylinder(Dialog dialog, float radius, float height) {
+		super(dialog);
 		setRadius(radius);
 		setHeight(height);
 	}

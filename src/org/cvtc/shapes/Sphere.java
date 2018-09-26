@@ -1,7 +1,5 @@
 package org.cvtc.shapes;
 
-import javax.swing.JOptionPane;
-
 /**
  * @author Heather
  *
@@ -42,10 +40,13 @@ public class Sphere extends Shape {
 	@Override
 	public void render() {
 		//Display a dialog box with sphere
-		JOptionPane.showMessageDialog(null, "Sphere \n Volume = " + volume() + "\n" + "Surface Area = " + surfaceArea() + "\n" + "Dimensions: \n Radius: " + getRadius());
+		//JOptionPane.showMessageDialog(null, "Sphere \n Volume = " + volume() + "\n" + "Surface Area = " + surfaceArea() + "\n" + "Dimensions: \n Radius: " + getRadius());
+		String message = "Sphere \n Volume = " + volume() + "\n" + "Surface Area = " + surfaceArea() + "\n" + "Dimensions: \n Radius: " + getRadius();
+		this.dialog.Show(message, "Sphere");
 	}
 	
-	public Sphere(Dialog MessageBox, float radius) {
+	public Sphere(float radius, Dialog dialog) {
+		super(dialog);
 		setRadius(radius);
 	}
 	

@@ -1,7 +1,7 @@
 package org.cvtc.shapes;
 
 public interface Dialog {
-	//jOptionPane.showMessageDialog
 
-	//git push origin master
+	int Show(String message, String title);
+
 }
