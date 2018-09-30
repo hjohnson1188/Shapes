@@ -5,9 +5,9 @@ package org.cvtc.shapes;
  *
  */
 
-public class Cuboid extends Shape {
+public class Cuboid implements ShapeInterface {
 
-	private float width = 0.0f;
+	/**private float width = 0.0f;
 	private float height = 0.0f;
 	private float depth = 0.0f;
 
@@ -15,7 +15,7 @@ public class Cuboid extends Shape {
 	 * 
 	 * @return the width
 	 */
-	public float getWidth() {
+	/**public float getWidth() {
 		//Make sure the entered width is not a negative. If negative, set back to 0.
 		if (width < 0) {
 			width = 0.0f;
@@ -26,14 +26,14 @@ public class Cuboid extends Shape {
 	 * 
 	 * @param set the width
 	 */
-	private void setWidth(float width) {
+	/**private void setWidth(float width) {
 		this.width = width;
 	}
 	/**
 	 * 
 	 * @return the height
 	 */
-	public float getHeight() {
+	/**public float getHeight() {
 		//make sure height is not negative
 		if (height < 0) {
 			height = 0.0f;
@@ -44,14 +44,14 @@ public class Cuboid extends Shape {
 	 * 
 	 * @param set the height
 	 */
-	private void setHeight(float height) {
+	/**private void setHeight(float height) {
 		this.height = height;
 	}
 	/**
 	 * 
 	 * @return the depth
 	 */
-	public float getDepth() {
+	/**public float getDepth() {
 		//Make sure depth is not negative.
 		if (depth < 0) {
 			depth = 0.0f;
@@ -62,7 +62,7 @@ public class Cuboid extends Shape {
 	 * 
 	 * @param  set the depth
 	 */
-	private void setDepth(float depth) {
+	/**private void setDepth(float depth) {
 		this.depth = depth;
 	}
 	@Override
@@ -89,5 +89,9 @@ public class Cuboid extends Shape {
 		setWidth(width);
 		setHeight(height);
 		setDepth(depth);
+	}**/
+	@Override
+	public void draw() {
+		System.out.println("Inside Cuboid::draw() method.");
 	}
 }

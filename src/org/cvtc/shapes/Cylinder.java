@@ -7,16 +7,17 @@ import javax.swing.JOptionPane;
  *
  */
 
-public class Cylinder extends Shape {
+@SuppressWarnings("unused")
+public class Cylinder implements ShapeInterface {
 
-	private float radius = 0.0f;
+	/**private float radius = 0.0f;
 	private float height = 0.0f;
 	
 	/**
 	 * 
 	 * @return the radius
 	 */
-	public float getRadius() {
+	/**public float getRadius() {
 		//Make sure radius is not negative
 		if (radius < 0) {
 			radius = 0.0f;
@@ -27,7 +28,7 @@ public class Cylinder extends Shape {
 	 * 
 	 * @param set the radius
 	 */
-	private void setRadius(float radius) {
+	/**private void setRadius(float radius) {
 		this.radius = radius;
 		
 	}
@@ -35,7 +36,7 @@ public class Cylinder extends Shape {
 	 * 
 	 * @return the height
 	 */
-	public float getHeight() {
+	/**public float getHeight() {
 		//make sure height is not negative
 		if (height < 0) {
 			height = 0.0f;
@@ -46,7 +47,7 @@ public class Cylinder extends Shape {
 	 * 
 	 * @param set the height
 	 */
-	private void setHeight(float height) {
+	/**private void setHeight(float height) {
 		this.height = height;
 	}
 	
@@ -72,5 +73,10 @@ public class Cylinder extends Shape {
 		super(dialog);
 		setRadius(radius);
 		setHeight(height);
+	}**/
+	
+	@Override
+	public void draw() {
+		System.out.println("Inside Cylinder::draw() method.");
 	}
 }

@@ -5,15 +5,15 @@ package org.cvtc.shapes;
  *
  */
 
-public class Sphere extends Shape {
+public class Sphere implements ShapeInterface {
 
-	private float radius;
+	/**private float radius;
 
 	/**
 	 * 
 	 * @return radius
 	 */
-	public float getRadius() {
+	/**public float getRadius() {
 		//make sure the radius is not negative
 		if (radius < 0) {
 			radius = 0.0f;
@@ -24,7 +24,7 @@ public class Sphere extends Shape {
 	 * 
 	 * @param set the radius
 	 */
-	private void setRadius(float radius) {
+	/**private void setRadius(float radius) {
 		this.radius = radius;
 	}
 	@Override
@@ -48,6 +48,11 @@ public class Sphere extends Shape {
 	public Sphere(float radius, Dialog dialog) {
 		super(dialog);
 		setRadius(radius);
+	}*/
+	
+	@Override
+	public void draw() {
+		System.out.println("Inside Sphere::draw() method.");
 	}
 	
 }
